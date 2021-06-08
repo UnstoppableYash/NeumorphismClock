@@ -1,0 +1,148 @@
+@font-face {
+  font-family: ProductSans;
+  src: url(assets/productsans.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: ProductSans;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #e0e0e0;
+  display: grid;
+  place-items: center;
+}
+
+main .clock {
+  width: calc(100vw - 40vw);
+  height: 70vh;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+main .clock .text {
+  z-index: 9999;
+}
+
+main .clock .text p {
+  font-size: 1.4rem;
+  z-index: 99;
+  margin-bottom: 1.2rem;
+}
+
+main .clock .time h1 {
+  font-size: 6.6rem;
+  letter-spacing: 10px;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  padding: 1.3rem 2.3rem;
+}
+
+main .clock .dayDate {
+  font-size: 1.29rem;
+  margin-top: 1.2rem;
+  z-index: 999;
+}
+
+@media screen and (max-width: 919px) {
+  main .clock .time h1 {
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  main .clock .time h1 {
+    font-size: 4rem;
+  }
+  main .clock {
+    width: calc(100vw - 30vw);
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 624px) {
+  main .clock .time h1 {
+    font-size: 4rem;
+  }
+  main .clock {
+    width: calc(100vw - 20vw);
+    height: 70vh;
+  }
+  main .clock .dayDate {
+    font-size: 1.19rem;
+  }
+  main .clock .text p {
+    font-size: 1.2rem;
+    z-index: 99;
+    margin-bottom: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 538px) {
+  main .clock .time h1 {
+    font-size: 3.5rem;
+    letter-spacing: 4px;
+  }
+  main .clock {
+    width: calc(100vw - 20vw);
+    height: 70vh;
+  }
+  main .clock .dayDate {
+    font-size: 1.19rem;
+  }
+  main .clock .text p {
+    font-size: 1.2rem;
+    z-index: 99;
+    margin-bottom: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  main .clock .time h1 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+  }
+  main .clock {
+    width: calc(100vw - 15vw);
+    height: 70vh;
+  }
+  main .clock .dayDate {
+    font-size: 1.19rem;
+  }
+  main .clock .text p {
+    font-size: 1.2rem;
+    z-index: 99;
+    margin-bottom: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 369px) {
+  main .clock .time h1 {
+    font-size: 2.6rem;
+    letter-spacing: 1px;
+  }
+  main .clock {
+    width: calc(100vw - 15vw);
+    height: 70vh;
+  }
+  main .clock .dayDate {
+    font-size: 1.09rem;
+  }
+  main .clock .text p {
+    font-size: 1.1rem;
+    z-index: 99;
+    margin-bottom: 1.2rem;
+  }
+}
